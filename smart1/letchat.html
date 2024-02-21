@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>let chat</title>
+    
+    <title>chat</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'comfortaa';
+        }
+       nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  nav img {
+    width: 200px;
+  }
+  
+  .nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  
+    
+  }
+  .nav-links ul li a {
+    color:#0B413F;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* text-transform: uppercase; */
+  }
+  
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }  
+
+  .content{
+    background-color: #0B413F;
+    width: 100%;
+    height: 200px;
+  }
+
+  @media (max-width: 767px) {
+    .content {
+      height: auto;
+      padding: 30px 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      height: auto;
+      padding: 20px 20px;
+    }
+  }
+  .content h2{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+    
+    
+color: white;
+text-align: left;
+
+padding-left: 220px;
+padding-top: 30px;
+padding-right:100px ;
+line-height: 1.5;
+}
+
+ .content p{
+    text-align: left;
+    color: white;
+    padding-left: 220px;
+    padding-right: 100px;
+    font-size: 20px;
+    padding-top: 0;
+    line-height: 1.5;
+}
+@media (max-width: 767px) {
+    .content h2,
+    .content p {
+      font-size: 1.2rem;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h2,
+    .content p {
+      font-size: 1rem;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+.gamil{
+    padding-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .gamil {
+    margin-right: 0;
+  }
+}
+.gamil h2{
+    text-align: left;
+    color: #0B413F;
+    padding-left: 220px;
+}
+.gamil p{
+    text-align: left;
+    color: #0B413F;
+    line-height: 1.5;
+    padding-left: 220px;
+}
+
+ .gamil .im{
+    float: right;
+    height: 120px;
+    width: 120px;
+    padding-right: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .gamil h2,
+  .gamil p {
+    padding-left: 20px;
+  }
+
+
+  .gamil .im {
+    float: none;
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .gamil .im img {
+    max-width: auto;
+    height: auto;
+  }
+}
+ 
+.di{
+    padding-top: 30px;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .di {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
+.text{
+    background-color: #0B413F;
+   
+    width: 50%;
+    height: 400px;
+    padding-left: 170px;
+    line-height: 1.5;
+}
+
+.text p{
+    padding-top: 40px;
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .text {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .text h2 {
+    text-align: center;
+  }
+
+  .text p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+.form{
+    padding-top: 20px;
+    
+}
+.form input{
+    height: 50px;
+    width: 500px;
+  text-align: center;
+    border: 3px solid #0C413F;
+    border-left: none;  
+}
+.form button{
+    background-color:#0C413F;
+    height: 40px;
+    width: 200px;
+    color: white;
+   
+    border: none;   
+}
+@media screen and (max-width: 767px) {
+  .form input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form button {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+  }
+}
+/*footer*/
+footer{
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    background-color: #0B413F;
+    border-radius: 50px;
+   
+    
+    }
+   
+    
+    
+    .container-1{
+    padding: 15px;
+    /* height: 400px; */
+    
+    }
+    .footer-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap:30px;
+    
+    }
+    
+    .col-1 ul{
+        list-style-type: none;
+        display: inline;
+    }
+    .col-1{
+    margin: 50px;
+    
+    }
+     
+    .col-1 img{
+    width: 200px;
+    height: 120px;
+    padding-top: 60px;
+   
+    
+    }
+    .nav-links{
+    padding-left: 400px;
+  }
+    .col-1 h2{
+    color: white;
+    margin-bottom: 1rem;
+    }
+    
+    .col-1 h4{
+        color: white;
+        margin-bottom: 1rem;
+        }
+    .col-1  li {
+    margin-bottom: 10px;
+    }
+    .col-1  li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 15px;
+    
+    }
+    .icon a{
+    font-size: 35px;
+    color: white;
+    margin-right: 20px;
+    }
+    
+    .back{
+    background: black;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+    }
+    
+    .mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    .mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+    }
+    .mid h2{
+    color: #fff;
+    font-size: 3rem;
+    }
+    a{
+    font-size: 1rem;
+    color:#0B413F;
+    /* margin-left: 1.5rem; */
+    text-decoration: #0B413F underline;
+} 
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="image/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="cases.html">Case Study</a></li>
+
+            </ul>
+           
+        </div>
+        <a href="letchat.html">Let Chat</a>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="content">
+    <h2>Let’s Transform Your Digital Landscape</h2>
+    <p>Ready to embark on a journey of digital transformation? Contact SMARTS SOLUTIONS today,<br> and let’s discuss how we can tailor our expertise to meet your unique business requirements.</p>
+</div>
+
+<div class="gamil">
+    <img class="im" src="image/choto.png">
+    <h2>Get in Touch:</h2>
+    <p>Email: info@smartssolutions.com<br> Phone: [Your Contact Number]</p>
+</div>
+
+<div class="di">
+    <div class="text">
+        <p>Whether you have a specific project<br> in mind or need guidance on enhancing,<br> your digital presence, our team is <br>here to help. Let’s collaborate and <br>create something extraordinary together.<br><br><br> SMARTS SOLUTIONS – Where<br> Innovation Meets Impact.</p>
+    </div>
+    <div class="form">
+        <form>
+            <input type="text" placeholder="John smit"><br><br>
+            <input type="email" placeholder="john@gmail"><br><br>
+            <input type="text" placeholder="iam looking for"><br><br>
+         <input type="text"  placeholder="iam lookin for pro"><br><br>
+         <!-- <textarea placeholder="ima looking for pro"></textarea> -->
+        <center> <button type="submit">Lets Connects</button></center>
+        </form>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="container-1">
+        <div class="footer-container">
+            <div class="col-1">
+            <img src="image/fo.png">
+        </div>
+
+        <div class="col-1">
+            <h2>Home</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Case Study</a></li>
+                <li><a href="#">Team</a></li>  
+                <li><a href="#">Clients</a></li>  
+            </ul>
+        </div>
+
+        <div class="col-1">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                 
+            </ul>
+        </div>
+        <div class="col-1">
+            <h2>Contact</h2>
+            <h4>Contact us</h4>
+           <div class="icon">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-snapchat'></i></a>
+
+           </div>
+           <div class="icon">
+            <a href="#"><i class='bx bxl-twitter'></i></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+
+           </div>
+        </div>
+
+        </div>
+    </footer> 
+</body>
+</html>
